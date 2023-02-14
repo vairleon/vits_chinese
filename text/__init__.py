@@ -1,13 +1,19 @@
 """ from https://github.com/keithito/tacotron """
 from text import cleaners
 from text.symbols import symbols,symbols_zh
+import json
+import os 
+dirpath = os.path.dirname(__file__)
 
 
 # Mappings from symbol to numeric ID and vice versa:
 # _symbol_to_id = {s: i for i, s in enumerate(symbols)}
 # _id_to_symbol = {i: s for i, s in enumerate(symbols)}
+ 
+chinese_mode = False
+with open(os.path.join(dirpath, '../configs/mode.json'), 'r') as f:
+  chinese_mode = json.load(f)['chinese_mode']
 
-chinese_mode = True
 if chinese_mode:
   _symbol_to_id = {s: i for i, s in enumerate(symbols_zh)}
   _id_to_symbol = {i: s for i, s in enumerate(symbols_zh)}

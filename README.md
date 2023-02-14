@@ -1,28 +1,24 @@
 
-# This code is slightly modified on the [VITS repo](https://github.com/jaywalnut310/vits)
+# This code is slightly modified on the (https://github.com/wac81/vits_chinese)
+## export module interface file
+package.py
+
+## switch english or chinese
+configs/mode.json
+
 ## chinese train
 `python3 train.py -c configs/woman_csmsc.json -m woman_csmsc`
 
 ## inference 
 you can run infer.py
 
-## switch english or chinese
-just modify 
-`chinese_mode = True`
-in ./text/__init__.py
-
 ## data example
 copy **24000hz** data-baker datasets to ./test/csmsc
 
 **For copyright reasons, you can only download it yourself**
 
-## models
-you can get example model in ./logs/woman_csmsc/G*.pth
-
 ## Prosody model
 you can try chinese Prosody model in this repo.
-
-
 
 ======================================================================================================
 

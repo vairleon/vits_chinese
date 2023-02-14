@@ -1,0 +1,10 @@
+.ipynb_checkpoints
+.bin
+debug/
+__pycache__/
+.wav
+monotonic_align/monotonic_align
+monotonic_align/build
+models/*
+temp_folder/
+monotonic_align/*.c
