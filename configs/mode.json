@@ -1,5 +1,5 @@
 {
-    "chinese_mode" : true,
+    "chinese_mode" : false,
     "sampling_rate" : 24000,
     "noise_scale" : 0.667,
     "noise_scale_w" : 0.8
